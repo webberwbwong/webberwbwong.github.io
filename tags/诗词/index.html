@@ -13,7 +13,7 @@
 
 
 
-<title>为姣依所作诗词赋文集 | Hexo</title>
+<title>Tag: 诗词 | Hexo</title>
 
 
 
@@ -112,115 +112,29 @@
     }
 </script>
             <div class="main">
-                <div class="container">
+                
+
     
-    
-        <div class="post-toc">
-    <div class="tocbot-list">
+<div class="container">
+    <div class="post-wrap tags">
+        <h2 class="post-title">-&nbsp;Tag&nbsp;·&nbsp;诗词-</h2>
     </div>
-    <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
-        <a onclick="go_top()">Back to top</a>
-        <a onclick="go_bottom()">Go to bottom</a>
-    </div>
-</div>
-
-<script>
-    var tocbot_timer;
-    var DEPTH_MAX = 6; // 为 6 时展开所有
-    var tocbot_default_config = {
-        tocSelector: '.tocbot-list',
-        contentSelector: '.post-content',
-        headingSelector: 'h1, h2, h3, h4, h5',
-        orderedList: false,
-        scrollSmooth: true,
-        onClick: extend_click,
-    };
-
-    function extend_click() {
-        clearTimeout(tocbot_timer);
-        tocbot_timer = setTimeout(function() {
-            tocbot.refresh(obj_merge(tocbot_default_config, {
-                hasInnerContainers: true
-            }));
-        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
-    }
-
-    document.ready(function() {
-        tocbot.init(obj_merge(tocbot_default_config, {
-            collapseDepth: 1
-        }));
-    });
-
-    function expand_toc() {
-        var b = document.querySelector('.tocbot-toc-expand');
-        var expanded = b.getAttribute('data-expanded');
-        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
-        tocbot.refresh(obj_merge(tocbot_default_config, {
-            collapseDepth: expanded ? 1 : DEPTH_MAX
-        }));
-        b.innerText = expanded ? 'Expand all' : 'Collapse all';
-    }
-
-    function go_top() {
-        window.scrollTo(0, 0);
-    }
-
-    function go_bottom() {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-
-    function obj_merge(target, source) {
-        for (var item in source) {
-            if (source.hasOwnProperty(item)) {
-                target[item] = source[item];
-            }
-        }
-        return target;
-    }
-</script>
+    <div class="post-wrap archive">
     
-
     
-    <article class="post-wrap">
-        <header class="post-header">
-            <h1 class="post-title">为姣依所作诗词赋文集</h1>
-            
-        </header>
-
-        <div class="post-content">
-            <h4 id="诗"><a href="#诗" class="headerlink" title="诗"></a>诗</h4><h4 id="词"><a href="#词" class="headerlink" title="词"></a>词</h4><h4 id="赋"><a href="#赋" class="headerlink" title="赋"></a>赋</h4>
-        </div>
+        
 
         
-        <section class="post-tags">
-            <div>
-                <span>Tag(s):</span>
-                <span class="tag">
-                    
-                    
-                        <a href="/tags/%E8%AF%97%E8%AF%8D/"># 诗词</a>
-                    
-                        
-                </span>
-            </div>
-            <div>
-                <a href="javascript:window.history.back();">back</a>
-                <span>· </span>
-                <a href="/">home</a>
-            </div>
-        </section>
-        <section class="post-nav">
-            
-                <a class="prev" rel="prev" href="/2024/11/17/third/">与 Joey书信集</a>
-            
-            
-            <a class="next" rel="next" href="/2024/09/29/hello-world/">欢迎访问爱姣网！</a>
-            
-        </section>
+            <h3>2024</h3>
+        
 
-
-    </article>
+        <article class="archive-item">
+            <a class="archive-item-link" href="/2024/10/22/second/">为姣依所作诗词赋文集</a>
+            <span class="archive-item-date">October 22, 2024</span>
+        </article>
+    
+    
+</div>
 </div>
 
             </div>
